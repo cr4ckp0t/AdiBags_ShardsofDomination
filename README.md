@@ -1,9 +1,11 @@
 
-# AdiBags - Korthian Relics
+# AdiBags - Shards of Domination
 
-Creates an AdiBags filter for the relics added in WoW patch 9.1. These relics are for the Archivist's Codex Reputation.
+Creates an AdiBags filter for the Shards of Domination socket items added in WoW patch 9.1.
 
 [https://www.curseforge.com/wow/addons/adibags-shards-of-domination](https://www.curseforge.com/wow/addons/adibags-shards-of-domination)
+
+Also check out my Korthian Relic filter at [https://www.curseforge.com/wow/addons/adibags-korthian-relics](https://www.curseforge.com/wow/addons/adibags-korthian-relics).
 
 ## Missing an item or Found a Bug?
 
