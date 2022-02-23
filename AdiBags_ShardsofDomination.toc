@@ -1,6 +1,6 @@
-## Interface: 90105
+## Interface: 90200
 ## Title: AdiBags - Shards of Domination
-## Version: 1.0.1
+## Version: 1.0.2
 ## Author: Crackpot
 ## Notes: Creates an AdiBags filter for Shards of Domination added in patch 9.1.
 ## X-Category: Bags & Inventory
