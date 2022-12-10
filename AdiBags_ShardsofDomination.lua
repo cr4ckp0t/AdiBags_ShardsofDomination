@@ -8,20 +8,6 @@ local AdiBags = LibStub("AceAddon-3.0"):GetAddon("AdiBags")
 local tonumber = _G["tonumber"]
 
 local L = addon.L
-local tooltip
-
-local function tooltipInit()
-    local tip, leftside = CreateFrame("GameTooltip"), {}
-    for i = 1, 6 do
-        local left, right = tip:CreateFontString(), tip:CreateFontString()
-        left:SetFontObject(GameFontNormal)
-        right:SetFontObject(GameFontNormal)
-        tip:AddFontStrings(left, right)
-        leftside[i] = left
-    end
-    tip.leftside = leftside
-    return tip
-end
 
 local shardFilter = AdiBags:RegisterFilter("Shards of Domination", 98, "ABEvent-1.0")
 shardFilter.uiName = L["Shards of Domination"]
@@ -101,17 +87,4 @@ function shardFilter:Filter(slotData)
     if self.shards[tonumber(slotData.itemId)] then
         return L["Shards of Domination"]
     end
-
-    --tooltip = tooltip or tooltipInit()
-    tooltip = GameTooltip
-    tooltip:SetOwner(UIParent, "ANCHOR_NONE")
-    tooltip:ClearLines()
-
-    if slotData.bag == BANK_CONTAINER then
-        tooltip:SetInventoryItem("player", BankButtonIDToInvSlotID(slotData.slot, nil))
-    else
-        tooltip:SetBagItem(slotData.bag, slotData.slot)
-    end
-
-    tooltip:Hide()
 end
