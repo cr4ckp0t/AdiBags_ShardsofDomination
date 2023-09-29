@@ -1,6 +1,6 @@
 ## Interface: 100107
 ## Title: AdiBags - Shards of Domination
-## Version: 1.1.5
+## Version: 1.1.6
 ## Author: Crackpot
 ## Notes: Creates an AdiBags filter for Shards of Domination added in patch 9.1.
 ## X-Category: Bags & Inventory
@@ -8,6 +8,7 @@
 
 Localization.lua
 AdiBags_ShardsofDomination.lua
+
 
 
 
